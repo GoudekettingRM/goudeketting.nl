@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Easy Retry",
+    "shortDesc": "An ruby gem that allows for easily retrying blocks of code.",
+    "longDesc": "Easy Retry adds a #tries method to the Numeric class. The #tries method takes a block of code and will retry the block a number of times equal to the number the method is called on. It also aliases #try to #tries in the odd case that you want to (re?)try a block of code only once.",
+    "thumbnail": {
+      "src": "/easy_retry.png",
+      "alt": "Easy Retry Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://rubygems.org/gems/easy_retry"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/easy_retry"
+      }
+    ],
+    "skills": [
+      "Ruby",
+      "RubyGems",
+      "Rake",
+      "RSpec",
+      "Rubocop",
+      "Simplecov",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "Parameterize",
+    "shortDesc": " TypeScript library for normalizing and parameterizing strings, making them URL-friendly.",
+    "longDesc": "Parameterize is a TypeScript library that normalizes and parameterizes strings, making them URL-friendly. It's a small library that can be used in the browser or in Node.js. It's also being used on this website! For example, `Hello World!` will be parameterized to: `hello-world`.",
+    "thumbnail": {
+      "src": "/parameterize.png",
+      "alt": "Parameterize Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://www.npmjs.com/package/@goudekettingrm/parameterize"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/parameterize"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Node JS",
+      "NPM",
+      "Jest",
+      "Changesets",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "TitleizeJS",
+    "shortDesc": "An NPM package that transforms strings into titles.",
+    "longDesc": "An NPM package that converts the input strings to strings that represent titles. It's also being used on this website! There are a few settings to make sure that it can deal with many different input strings. For example, `hello world!` will be titleized to: `Hello World`. If the following setting is passed `{ ignoreSymbols: '!' }`, titleize will convert this to `Hello World!`, preserving the exclamation point.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/robin-random-files/image/upload/v1596054291/abf563ksxyolxix2r506_c2i2xv.webp",
+      "alt": "TitleizeJS Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://www.npmjs.com/package/titleizejs"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/titleize"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Node JS",
+      "NPM",
+      "Mocha",
+      "Chai",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "The Robin Googol",
+    "shortDesc": "Exploring the size of a googol, visually, using my name",
+    "longDesc": "A simple app to help you understand the size of a googol. It was made using vanilla JavaScript, HTML and CSS. It visualizes the size of a googol by printing my name. Explore the size of a googol by scrolling, or just by chapter.",
+    "thumbnail": {
+      "src": "/googol.png",
+      "alt": "The Robin Googol Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://googol.goudeketting.nl/"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/robin-googol"
+      }
+    ],
+    "skills": ["JavaScript", "HTML", "CSS", "Responsive Design"]
+  },
+  {
+    "title": "Should I Go Out",
+    "shortDesc": "Should you go outside during the corona crisis? This app will help you decide!",
+    "longDesc": "A Front-end web application to check if it is wise to go outside during the corona crisis. The app was made using React/Redux and TypeScript. The goal of this app was to practice working with TypeScript and to inform people. Thanks to the help of some friends, I managed to get many translations to add some I18n to it as well (using the React-intl package). Futhermore, I added the option to share the website using the React-share package.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/robin-random-files/image/upload/v1586039519/5e6a55e065f9f1dc64398873_iconfinder_pandemic-disease-virus-infection-coronavirus-incident--covid19_5879326_oykult.png",
+      "alt": "Should I Go Out Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://should-i-go-out.goudeketting.nl/"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/should-i-go-out-client"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Redux",
+      "I18n",
+      "HTML",
+      "CSS",
+      "Continuous Integration"
+    ]
+  }
+]

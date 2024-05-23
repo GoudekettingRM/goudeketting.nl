@@ -15,6 +15,7 @@
     "merge-release-pr": "gh pr merge develop --auto --merge"
   },
   "dependencies": {
+    "framer-motion": "^11.2.6",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
