@@ -9,7 +9,10 @@
     "lint": "next lint",
     "prepare": "husky install",
     "precommit": "lint-staged",
-    "changelog": "npx changeset && git add .changeset && git commit -m \"Chore: update changelog\" && git push"
+    "changelog": "npx changeset && git add .changeset && git commit -m \"Chore: update changelog\" && git push",
+    "production-release": "npm run create-release-pr && npm run merge-release-pr",
+    "create-release-pr": "gh pr create --title \"[Automated] Production Release\" --body \":warning: This pull request was automatically generated.\" --base main --head develop",
+    "merge-release-pr": "gh pr merge develop --auto --merge"
   },
   "dependencies": {
     "next": "14.2.3",
