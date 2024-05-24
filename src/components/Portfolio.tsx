@@ -9,9 +9,12 @@ const Portfolio = () => {
 
   return (
     <Section id='portfolio' name='Portfolio'>
-      <div>
+      <div className='max-w-[1270px]'>
         <h3 className='text-center text-sm text-stone-300 pb-5 italic'>Click to learn more</h3>
-        <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-4 sm:gap-2 my-6'>
+        <div
+          className='grid md:gap-6 gap-4 my-6'
+          style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%,300px),1fr))' }}
+        >
           {projects.map((project) => (
             <ProjectCard {...project} key={project.title} />
           ))}

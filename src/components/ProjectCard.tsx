@@ -31,8 +31,8 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
       return (
         <SVG
           className={`
-      transition-all ease-in-out duration-200 brightness-50 hover-hover:group-hover:brightness-[0.1]
-      object-cover w-full top-0 absolute z-0 h-full`}
+      transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
+      object-cover w-full top-0 absolute z-0 h-full rounded-lg`}
         />
       );
     }
@@ -40,8 +40,8 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
     return (
       <Image
         className={`
-        transition-all ease-in-out duration-200 brightness-50 hover-hover:group-hover:brightness-[0.1]
-        object-cover w-full top-0 absolute z-0 h-full`}
+        transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
+        object-cover w-full top-0 absolute z-0 h-full rounded-lg`}
         src={thumbnail.src}
         alt={thumbnail.alt}
         height={350}
@@ -49,6 +49,7 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
       />
     );
   }, [thumbnail, SVGs]);
+
   return (
     <GenericInfoModal
       title={title}
@@ -56,16 +57,41 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
         <motion.div
           initial={{ x: -10, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          whileHover={{ scale: 1.05 }}
-          className='flex flex-col border m-3'
+          whileHover='hover'
+          variants={{
+            hover: {
+              scale: 1.05
+            }
+          }}
+          className='flex flex-col border-2 rounded-lg m-3 min-w-44'
         >
-          <div className='group w-full h-80 relative overflow-hidden'>
+          <div className='group w-full h-80 relative rounded-lg overflow-hidden flex'>
             {Img}
-            <div className='transition-all ease-in-out duration-200 hover-hover group-hover:cursor-pointer group-hover:opacity-100 h-full w-full text-center flex flex-col items-center justify-center px-3 z-10 relative'>
-              <h2 className='font-bold text-3xl text-shadow-outline-sm shadow-black'>{title}</h2>
-              <h3 className='italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl'>
+            <div className='h-full w-full text-center flex flex-col justify-start items-center px-3 z-10 relative'>
+              <motion.h2
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                initial={{ y: 0 }}
+                variants={{
+                  hover: {
+                    y: '-260px'
+                  }
+                }}
+                className='font-bold text-3xl text-shadow-outline-sm shadow-black mb-3 bottom-0 absolute'
+              >
+                {title}
+              </motion.h2>
+              <motion.h3
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                initial={{ top: '100%' }}
+                variants={{
+                  hover: {
+                    translateY: 'calc(-100% - 1rem)'
+                  }
+                }}
+                className='italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl max-h-fit relative'
+              >
                 {shortDesc}
-              </h3>
+              </motion.h3>
             </div>
           </div>
         </motion.div>
@@ -93,7 +119,7 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
                 href={link.link}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex-1 underline sm:no-underline link-external px-3 py-2 rounded-md bg-gray-200 shadow-md transition-all ease-in-out duration-200 hover:bg-gray-300 hover:shadow-lg hover:transition-all hover:ease-in-out hover:duration-200 text-center'
+                className='flex-1 underline sm:no-underline link-external px-3 py-2 rounded-lg bg-gray-200 shadow-md transition-all ease-in-out duration-200 hover:bg-gray-300 hover:shadow-lg hover:transition-all hover:ease-in-out hover:duration-200 text-center'
               >
                 {link.title}
               </Link>
