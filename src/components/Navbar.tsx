@@ -40,6 +40,9 @@ export default function Navbar() {
           setOpen(!isOpen);
         }
       }}
+      onClick={() => {
+        setOpen(!isOpen);
+      }}
     >
       <motion.ul
         initial={{ opacity: 0 }}
