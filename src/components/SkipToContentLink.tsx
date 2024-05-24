@@ -6,7 +6,13 @@ const SkipToContentLink = () => {
     <Link
       href='#portfolio'
       onClick={() => {
-        document.getElementById('portfolio')!.focus();
+        const el = document.getElementById('portfolio');
+
+        if (!el) return;
+
+        el.tabIndex = -1;
+        el.focus();
+        el.removeAttribute('tabindex');
 
         setTimeout(() => {
           window.history.pushState({}, '', '/');
