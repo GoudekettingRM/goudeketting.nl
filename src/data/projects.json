@@ -1,0 +1,231 @@
+[
+  {
+    "title": "Career Basecamp",
+    "shortDesc": "Trying to help people find a meaningful career using the science of personality.",
+    "longDesc": "Career Basecamp is a project that I am working on with a friend of mine. We started it to help people find a meaningful career using the science of personality. It's a continual work in progress, but I'm excited to it develop and grow. So far, we've helped over 20.000 people figure out what careers suit them best and why they might be feeling stuck in their current job.",
+    "thumbnail": {
+      "src": "svg:basecamp",
+      "alt": "Career Basecamp Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Have a look",
+        "link": "https://career-basecamp.com"
+      }
+    ],
+    "skills": [
+      "Vue3",
+      "Nuxt",
+      "Typescript",
+      "Pinia",
+      "d3",
+      "CSS",
+      "HTML",
+      "Python",
+      "Django",
+      "Django-rest-framework",
+      "Postgres",
+      "Responsive Design",
+      "SEO",
+      "Heroku"
+    ]
+  },
+  {
+    "title": "Part 4",
+    "shortDesc": "A website for Part 4, they offer flame-retardant, biodegradable, and Cradle to Cradle gold® certified curtain fabrics designed for circular use.",
+    "longDesc": "Part4 introduces the Zero Waste collection of flame-retardant curtain fabrics that are fully biodegradable and Cradle to Cradle gold® certified, ensuring no microplastics after composting. These fabrics match the durability and properties of 100% polyester and support circular projects in healthcare, hospitality, recreation, and offices. Committed to sustainability, Part4 collaborates with European weavers to minimize ecological impact and contribute to the Netherlands' circular economy goals.",
+    "thumbnail": {
+      "src": "/part4.png",
+      "alt": "Part 4 Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Have a look",
+        "link": "https://part4.nl"
+      }
+    ],
+    "skills": [
+      "CSS",
+      "HTML",
+      "Custom Web Hosting",
+      "Contact Forms",
+      "File Downloads",
+      "Squarespace"
+    ]
+  },
+  {
+    "title": "Fine Lines by Hanna",
+    "shortDesc": "A website for a visual artist, showcasing her work.",
+    "longDesc": "Hanna Lenitz is a visual artist who creates visuals, infographics, and graphic recordings. She wanted a website to showcase her work. I created a website for her using NextJS, React, and TypeScript.",
+    "thumbnail": {
+      "src": "/fine_lines.png",
+      "alt": "Fine Lines by Hanna Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Have a look",
+        "link": "https://finelinesbyhanna.com"
+      }
+    ],
+    "skills": ["NextJS", "React", "Typescript", "RSpec", "Emotion", "EmailJS", "Vercel"]
+  },
+  {
+    "title": "Personal Website",
+    "shortDesc": "This website, showcasing my work.",
+    "longDesc": "This website is a showcase of my work. I created it using NextJS, React, and TypeScript. It's regularly being updated with new projects.",
+    "thumbnail": {
+      "src": "/logo.png",
+      "alt": "Goudeketting.nl Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/goudeketting.nl"
+      }
+    ],
+    "skills": [
+      "NextJS",
+      "React",
+      "Typescript",
+      "TailwindCSS",
+      "Headless UI",
+      "Framer Motion",
+      "Resend",
+      "React Email",
+      "Custom Web Hosting"
+    ]
+  },
+  {
+    "title": "Easy Retry",
+    "shortDesc": "An ruby gem that allows for easily retrying blocks of code.",
+    "longDesc": "Easy Retry adds a #tries method to the Numeric class. The #tries method takes a block of code and will retry the block a number of times equal to the number the method is called on. It also aliases #try to #tries in the odd case that you want to (re?)try a block of code only once.",
+    "thumbnail": {
+      "src": "/easy_retry.png",
+      "alt": "Easy Retry Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://rubygems.org/gems/easy_retry"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/easy_retry"
+      }
+    ],
+    "skills": [
+      "Ruby",
+      "RubyGems",
+      "Rake",
+      "RSpec",
+      "Rubocop",
+      "Simplecov",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "Parameterize",
+    "shortDesc": "TypeScript library for normalizing and parameterizing strings, making them URL-friendly.",
+    "longDesc": "Parameterize is a TypeScript library that normalizes and parameterizes strings, making them URL-friendly. It's a small library that can be used in the browser or in Node.js. It's also being used on this website! For example, `Hello World!` will be parameterized to: `hello-world`.",
+    "thumbnail": {
+      "src": "/parameterize.png",
+      "alt": "Parameterize Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://www.npmjs.com/package/@goudekettingrm/parameterize"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/parameterize"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Node JS",
+      "NPM",
+      "Jest",
+      "Changesets",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "TitleizeJS",
+    "shortDesc": "An NPM package that transforms strings into titles.",
+    "longDesc": "An NPM package that converts the input strings to strings that represent titles. It's also being used on this website! There are a few settings to make sure that it can deal with many different input strings. For example, `hello world!` will be titleized to: `Hello World`. If the following setting is passed `{ ignoreSymbols: '!' }`, titleize will convert this to `Hello World!`, preserving the exclamation point.",
+    "thumbnail": {
+      "src": "/titleize.png",
+      "alt": "TitleizeJS Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://www.npmjs.com/package/titleizejs"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/titleize"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "Node JS",
+      "NPM",
+      "Mocha",
+      "Chai",
+      "Continuous Integration"
+    ]
+  },
+  {
+    "title": "The Robin Googol",
+    "shortDesc": "Exploring the size of a googol, visually, using my name",
+    "longDesc": "A simple app to help you understand the size of a googol. It was made using vanilla JavaScript, HTML and CSS. It visualizes the size of a googol by printing my name. Explore the size of a googol by scrolling, or just by chapter.",
+    "thumbnail": {
+      "src": "/googol.png",
+      "alt": "The Robin Googol Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://googol.goudeketting.nl/"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/robin-googol"
+      }
+    ],
+    "skills": ["JavaScript", "HTML", "CSS", "Responsive Design"]
+  },
+  {
+    "title": "Should I Go Out",
+    "shortDesc": "Should you go outside during the corona crisis? This app will help you decide!",
+    "longDesc": "A Front-end web application to check if it is wise to go outside during the corona crisis. The app was made using React/Redux and TypeScript. The goal of this app was to practice working with TypeScript and to inform people. Thanks to the help of some friends, I managed to get many translations to add some I18n to it as well (using the React-intl package). Futhermore, I added the option to share the website using the React-share package.",
+    "thumbnail": {
+      "src": "https://res.cloudinary.com/robin-random-files/image/upload/v1586039519/5e6a55e065f9f1dc64398873_iconfinder_pandemic-disease-virus-infection-coronavirus-incident--covid19_5879326_oykult.png",
+      "alt": "Should I Go Out Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Try it",
+        "link": "https://should-i-go-out.goudeketting.nl/"
+      },
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/should-i-go-out-client"
+      }
+    ],
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Redux",
+      "I18n",
+      "HTML",
+      "CSS",
+      "Continuous Integration"
+    ]
+  }
+]
