@@ -70,6 +70,32 @@
     "skills": ["NextJS", "React", "Typescript", "RSpec", "Emotion", "EmailJS", "Vercel"]
   },
   {
+    "title": "Personal Website",
+    "shortDesc": "This website, showcasing my work.",
+    "longDesc": "This website is a showcase of my work. I created it using NextJS, React, and TypeScript. It's regularly being updated with new projects.",
+    "thumbnail": {
+      "src": "/logo.png",
+      "alt": "Goudeketting.nl Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Look at the code",
+        "link": "https://github.com/GoudekettingRM/goudeketting.nl"
+      }
+    ],
+    "skills": [
+      "NextJS",
+      "React",
+      "Typescript",
+      "TailwindCSS",
+      "Headless UI",
+      "Framer Motion",
+      "Resend",
+      "React Email",
+      "Custom Web Hosting"
+    ]
+  },
+  {
     "title": "Easy Retry",
     "shortDesc": "An ruby gem that allows for easily retrying blocks of code.",
     "longDesc": "Easy Retry adds a #tries method to the Numeric class. The #tries method takes a block of code and will retry the block a number of times equal to the number the method is called on. It also aliases #try to #tries in the odd case that you want to (re?)try a block of code only once.",
