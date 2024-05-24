@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Section id='about' name='About Me' className='bg-gray-900'>
       <div className='text-base md:text-lg lg:text-xl w-5/6 md:w-5/6 flex flex-col-reverse md:flex-row items-center justify-center gap-10'>
-        <div className='text-justify sm:text-left sm:max-w-prose'>
+        <div className='text-justify sm:text-left sm:max-w-prose' tabIndex={0}>
           <p>I&apos;m Robin! I am a curious, enthusiastic, goal-oriented developer.</p>
           <br />
           <p>

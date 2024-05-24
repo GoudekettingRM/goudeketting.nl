@@ -32,7 +32,15 @@ export default function Navbar() {
   };
 
   return (
-    <div className='fixed top-5 right-5 flex sm:flex-row z-50 '>
+    <div
+      className='fixed top-5 right-5 flex sm:flex-row z-50'
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter') {
+          setOpen(!isOpen);
+        }
+      }}
+    >
       <motion.ul
         initial={{ opacity: 0 }}
         animate={isOpen ? 'open' : 'closed'}
