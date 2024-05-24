@@ -10,9 +10,7 @@ const Portfolio = () => {
   return (
     <Section id='portfolio' name='Portfolio'>
       <div>
-        <h3 className='text-center text-base text-stone-300 pb-5 italic'>
-          Learn more by clicking an image
-        </h3>
+        <h3 className='text-center text-sm text-stone-300 pb-5 italic'>Click to learn more</h3>
         <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-4 sm:gap-2 my-6'>
           {projects.map((project) => (
             <ProjectCard {...project} key={project.title} />

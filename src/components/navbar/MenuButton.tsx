@@ -14,7 +14,7 @@ const MenuButton = ({
   width = 24,
   height = 24,
   strokeWidth = 1,
-  color = '#fff',
+  color = '#000',
   transition = undefined,
   lineProps = null,
   ...props
@@ -62,19 +62,20 @@ const MenuButton = ({
   const unitWidth = (unitHeight * (width as number)) / (height as number);
 
   return (
-    <motion.svg
-      viewBox={`0 0 ${unitWidth} ${unitHeight}`}
-      overflow='visible'
-      preserveAspectRatio='none'
-      width={width}
-      height={height}
-      className={`${isOpen ? 'my-0.5' : 'my-0'} cursor-pointer`}
-      {...props}
-    >
-      <motion.line x1='0' x2={unitWidth} y1='0' y2='0' variants={top} {...lineProppies} />
-      <motion.line x1='0' x2={unitWidth} y1='2' y2='2' variants={center} {...lineProppies} />
-      <motion.line x1='0' x2={unitWidth} y1='4' y2='4' variants={bottom} {...lineProppies} />
-    </motion.svg>
+    <div className='cursor-pointer p-2 bg-gray-100 opacity-80 rounded-sm -mt-2'>
+      <motion.svg
+        viewBox={`0 0 ${unitWidth} ${unitHeight}`}
+        overflow='visible'
+        preserveAspectRatio='none'
+        width={width}
+        height={height}
+        {...props}
+      >
+        <motion.line x1='0' x2={unitWidth} y1='0' y2='0' variants={top} {...lineProppies} />
+        <motion.line x1='0' x2={unitWidth} y1='2' y2='2' variants={center} {...lineProppies} />
+        <motion.line x1='0' x2={unitWidth} y1='4' y2='4' variants={bottom} {...lineProppies} />
+      </motion.svg>
+    </div>
   );
 };
 

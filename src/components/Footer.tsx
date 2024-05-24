@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className='w-full flex justify-between flex-col items-center sm:flex-row font-mono py-8 px-4 text-sm'>
       <p>© Robin Goudeketting - {new Date().getFullYear()}</p>
-      <div className='flex flex-row flex-wrap mt-4 sm:mt-0'>
+      <div className='grid grid-cols-2 gap-2 sm:flex sm:flex-row flex-wrap mt-4 sm:mt-0'>
         <Link
           className='sm:ml-6 underline sm:no-underline hover:underline'
           href='https://github.com/goudekettingrm'
@@ -14,7 +14,7 @@ export default function Footer() {
           &gt; Github
         </Link>
         <Link
-          className='ml-6 underline sm:no-underline hover:underline'
+          className='sm:ml-6 underline sm:no-underline hover:underline'
           href='https://twitter.com/RMGoudeketting'
           rel='noopener noreferrer'
           target='_blank'
@@ -22,7 +22,7 @@ export default function Footer() {
           &gt; X (Twitter)
         </Link>
         <Link
-          className='ml-6 underline sm:no-underline hover:underline'
+          className='sm:ml-6 underline sm:no-underline hover:underline'
           href='https://www.linkedin.com/in/robinmgoudeketting/'
           rel='noopener noreferrer'
           target='_blank'
@@ -30,10 +30,10 @@ export default function Footer() {
           &gt; LinkedIn
         </Link>
         <Link
-          className='ml-6 underline sm:no-underline hover:underline'
+          className='sm:ml-6 underline sm:no-underline hover:underline'
           href='mailto:robin@goudeketting.nl'
         >
-          &gt; robin@goudeketting.nl
+          &gt; Email
         </Link>
       </div>
     </footer>

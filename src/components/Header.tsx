@@ -11,7 +11,7 @@ const Header = () => {
       <motion.h2
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        className='text-center text-7xl font-bold italic text-blue-300'
+        className='text-center text-7xl font-bold italic text-green-300'
       >
         Hey! I&apos;m
       </motion.h2>
@@ -20,7 +20,7 @@ const Header = () => {
           Robin
         </motion.div>
         <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }}>
-          <span className='hidden sm:block'>Goudeketting</span>
+          <span className='hidden sm:block mt-1'>Goudeketting</span>
         </motion.div>
       </h1>
       <motion.h3
@@ -29,7 +29,15 @@ const Header = () => {
         transition={{ duration: 1, times: [0.3, 0.4, 1.0] }}
         className='text-center text-xl hover:cursor-pointer hover:text-stone-100 text-stone-300 pt-5 italic'
       >
-        <Link href='#contact' className='flex flex-col justify-center items-center'>
+        <Link
+          href='#contact'
+          className='flex flex-col justify-center items-center'
+          onClick={() => {
+            setTimeout(() => {
+              window.history.pushState({}, '', '/');
+            }, 0);
+          }}
+        >
           Want to chat?
           <svg
             xmlns='http://www.w3.org/2000/svg'

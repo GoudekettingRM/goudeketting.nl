@@ -2,7 +2,7 @@ import Section from './Section';
 
 const Contact = () => {
   return (
-    <Section id='contact' name='Contact Me' className='bg-gray-900 h-[calc(100dvh-86px)]'>
+    <Section id='contact' name='Contact Me' className='bg-gray-900 sm:h-[calc(100dvh-86px)]'>
       <form className='max-w-xl mx-auto'>
         <div className='mb-4'>
           <label className='block mb-2'>Name</label>
