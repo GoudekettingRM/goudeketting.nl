@@ -4,11 +4,12 @@ import { useFormStatus } from 'react-dom';
 const SubmitButton = () => {
   const { pending } = useFormStatus();
   return (
-    <div className='text-right'>
+    <div className='sm:col-span-2 text-center'>
       <button
+        id='button'
         type='submit'
         disabled={pending}
-        className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:bg-blue-700 ${pending ? 'cursor-not-allowed opacity-75' : ''}`}
+        className='bg-indigo-600 shadow-xl hover:bg-indigo-500 text-white font-bold rounded-full p-4 w-48 disabled:cursor-not-allowed disabled:opacity-75'
       >
         {pending ? 'Sending...' : 'Send'}
       </button>

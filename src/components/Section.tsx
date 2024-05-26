@@ -4,12 +4,14 @@ function Section({
   name,
   children,
   id,
-  className = ''
+  className = '',
+  childWrapperClassName = ''
 }: {
   id: string;
   name: string;
   children: ReactNode;
   className?: string;
+  childWrapperClassName?: string;
 }) {
   return (
     <div
@@ -20,7 +22,9 @@ function Section({
         <h2 id={name} className='text-4xl py-5 font-bold'>
           {name}
         </h2>
-        <div className='py-2 w-full flex justify-center items-center'>{children}</div>
+        <div className={`py-2 w-full flex justify-center items-center ${childWrapperClassName}`}>
+          {children}
+        </div>
       </div>
     </div>
   );
