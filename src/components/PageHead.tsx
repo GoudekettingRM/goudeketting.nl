@@ -2,8 +2,7 @@ import Script from 'next/script';
 
 const PageHead = () => {
   return (
-    <>
-      <Script id='scheme' type='application/ld+json'>{`
+    <Script id='scheme' type='application/ld+json'>{`
         {
           "@context": "https://schema.org/",
           "@type": "Person",
@@ -18,7 +17,6 @@ const PageHead = () => {
           "jobTitle": "Full-Stack Developer"
         }
       `}</Script>
-    </>
   );
 };
 
