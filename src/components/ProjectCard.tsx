@@ -30,18 +30,20 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
       const SVG = SVGs[svg as keyof typeof SVGs];
       return (
         <SVG
-          className={`
-      transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
-      object-cover w-full top-0 absolute z-0 h-full rounded-lg`}
+          className='
+            transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
+            object-cover w-full top-0 absolute z-0 h-full rounded-lg
+          '
         />
       );
     }
 
     return (
       <Image
-        className={`
-        transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
-        object-cover w-full top-0 absolute z-0 h-full rounded-lg`}
+        className='
+          transition-all ease-in-out duration-200 brightness-75 group-hover:brightness-50
+          object-cover w-full top-0 absolute z-0 h-full rounded-lg
+        '
         src={thumbnail.src}
         alt={thumbnail.alt}
         height={350}
@@ -53,48 +55,59 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
   return (
     <GenericInfoModal
       title={title}
+      buttonComponent={motion.div}
+      buttonProps={{
+        initial: { x: -10, opacity: 0 },
+        whileInView: { x: 0, opacity: 1 },
+        whileHover: 'hover',
+        whileFocus: 'focus',
+        variants: {
+          hover: {
+            scale: 1.05
+          },
+          focus: {
+            scale: 1.05
+          }
+        },
+        className: 'flex flex-col border-2 rounded-lg m-3 min-w-44 cursor-pointer',
+        tabIndex: 0
+      }}
       Button={
-        <motion.div
-          initial={{ x: -10, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          whileHover='hover'
-          variants={{
-            hover: {
-              scale: 1.05
-            }
-          }}
-          className='flex flex-col border-2 rounded-lg m-3 min-w-44'
-        >
-          <div className='group w-full h-80 relative rounded-lg overflow-hidden flex'>
-            {Img}
-            <div className='h-full w-full text-center flex flex-col justify-start items-center px-3 z-10 relative'>
-              <motion.h2
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-                initial={{ y: 0 }}
-                variants={{
-                  hover: {
-                    y: '-260px'
-                  }
-                }}
-                className='font-bold text-3xl text-shadow-outline-sm shadow-black mb-3 bottom-0 absolute'
-              >
-                {title}
-              </motion.h2>
-              <motion.h3
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-                initial={{ top: '100%' }}
-                variants={{
-                  hover: {
-                    translateY: 'calc(-100% - 1rem)'
-                  }
-                }}
-                className='italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl max-h-fit relative'
-              >
-                {shortDesc}
-              </motion.h3>
-            </div>
+        <div className='group w-full h-80 relative rounded-lg overflow-hidden flex'>
+          {Img}
+          <div className='h-full w-full text-center flex flex-col justify-start items-center px-3 z-10 relative'>
+            <motion.h2
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              initial={{ y: 0 }}
+              variants={{
+                hover: {
+                  y: '-260px'
+                },
+                focus: {
+                  y: '-260px'
+                }
+              }}
+              className='font-bold text-3xl text-shadow-outline-sm shadow-black mb-3 bottom-0 absolute'
+            >
+              {title}
+            </motion.h2>
+            <motion.h3
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              initial={{ top: '100%' }}
+              variants={{
+                hover: {
+                  translateY: 'calc(-100% - 1rem)'
+                },
+                focus: {
+                  translateY: 'calc(-100% - 1rem)'
+                }
+              }}
+              className='italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl max-h-fit relative'
+            >
+              {shortDesc}
+            </motion.h3>
           </div>
-        </motion.div>
+        </div>
       }
     >
       <>
