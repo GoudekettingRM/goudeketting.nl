@@ -33,6 +33,14 @@ const Header = () => {
           href='#contact'
           className='flex flex-col justify-center items-center'
           onClick={() => {
+            const el = document.getElementById('contact');
+
+            if (!el) return;
+
+            el.tabIndex = -1;
+            el.focus();
+            el.removeAttribute('tabindex');
+
             setTimeout(() => {
               window.history.pushState({}, '', '/');
             }, 0);
