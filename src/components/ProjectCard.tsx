@@ -134,7 +134,7 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
                 href={link.link}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex-1 underline sm:no-underline link-external px-3 py-2 rounded-lg bg-gray-200 shadow-md transition-all ease-in-out duration-200 hover:bg-gray-300 hover:shadow-lg hover:transition-all hover:ease-in-out hover:duration-200 text-center'
+                className='flex-1 underline sm:no-underline link-external black px-3 py-2 rounded-lg bg-gray-200 shadow-md transition-all ease-in-out duration-200 hover:bg-gray-300 hover:shadow-lg hover:transition-all hover:ease-in-out hover:duration-200 text-center'
               >
                 {link.title}
               </Link>

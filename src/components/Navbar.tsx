@@ -7,19 +7,19 @@ import { MenuButton } from './navbar/MenuButton';
 const links = [
   {
     name: 'Home',
-    href: '#home'
+    href: '/#home'
   },
   {
     name: 'About',
-    href: '#about'
+    href: '/#about'
   },
   {
     name: 'Portfolio',
-    href: '#portfolio'
+    href: '/#portfolio'
   },
   {
     name: 'Contact',
-    href: '#contact'
+    href: '/#contact'
   }
 ];
 
@@ -58,9 +58,6 @@ export default function Navbar() {
               className='transition-all cursor-pointer ease-out duration-100 bold text-lg text-black sm:text-white hover:text-blue-300 border-b border-gray-400 w-full px-2 sm:px-0 sm:border-none pb-2 mb-2 sm:pb-0 sm:mb-0 last:border-none last:pb-0 last:mb-0'
               onClick={() => {
                 setOpen(false);
-                setTimeout(() => {
-                  window.history.pushState({}, '', '/');
-                }, 0);
               }}
             >
               <li className='mx-2'>{link.name}</li>
