@@ -20,6 +20,9 @@ const config: Config = {
         'outline-sm': '0.05em 0.05em 0 var(--tw-shadow-color)',
         outline: '0.15em 0.15em 0 var(--tw-shadow-color)',
         'outline-lg': '0.25em 0.25em 0 var(--tw-shadow-color)'
+      },
+      animation: {
+        'fade-in': 'fade-in linear forwards'
       }
     }
   },

@@ -48,7 +48,12 @@ const GenericInfoModal = <T extends ElementType>({
         <Component
           {...buttonProps}
           onClick={() => {
-            setModalOpen(true);
+            setTimeout(() => setModalOpen(true), 0);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              setTimeout(() => setModalOpen(true), 0);
+            }
           }}
         >
           {Button}
@@ -59,6 +64,11 @@ const GenericInfoModal = <T extends ElementType>({
           className={`text-neutral-700 underline flex gap-1 items-center ${buttonClassName}`}
           onClick={() => {
             setModalOpen(true);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              setTimeout(() => setModalOpen(true), 0);
+            }
           }}
         >
           <InformationCircleIcon className='w-5 h-5' /> {buttonText}

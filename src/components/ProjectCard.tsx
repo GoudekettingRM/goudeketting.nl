@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { useMotion } from '@/hooks/useMotion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo } from 'react';
@@ -17,6 +17,7 @@ export interface IProject {
 }
 
 export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, title }: IProject) {
+  const { motion, reduced } = useMotion();
   const SVGs = useMemo(
     () => ({
       basecamp: BasecampLogo
@@ -69,7 +70,8 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
             scale: 1.05
           }
         },
-        className: 'flex flex-col border-2 rounded-lg m-3 min-w-44 cursor-pointer',
+        className:
+          'flex flex-col border-2 rounded-lg m-3 min-w-44 cursor-pointer hover:scale-105 hover:transition-transform',
         tabIndex: 0
       }}
       Button={
@@ -102,7 +104,7 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
                   translateY: 'calc(-100% - 1rem)'
                 }
               }}
-              className='italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl max-h-fit relative'
+              className={`italic font-bold text-blue-300 text-shadow-outline-sm shadow-black text-xl max-h-fit relative ${reduced ? 'opacity-0' : 'opacity-100'}`}
             >
               {shortDesc}
             </motion.h3>

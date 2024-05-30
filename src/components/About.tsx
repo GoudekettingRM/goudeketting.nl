@@ -21,7 +21,7 @@ export default function About() {
           </p>
         </div>
         <Image
-          className='w-1/2 md:w-1/3 aspect-square rounded-full border-white border-2'
+          className='w-1/2 md:w-1/3 aspect-square rounded-full border-white border-2 animate-fade-in from-top'
           alt='Robin Goudeketting'
           src={RobinImage}
         />
