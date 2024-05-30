@@ -1,10 +1,14 @@
 'use client';
 import Link from 'next/link';
 
-const SkipToContentLink = () => {
+interface ISkipToContentLinkProps {
+  target: string;
+}
+
+const SkipToContentLink = ({ target }: ISkipToContentLinkProps) => {
   return (
     <Link
-      href='#portfolio'
+      href={target}
       onClick={() => {
         const el = document.getElementById('portfolio');
 
@@ -13,10 +17,6 @@ const SkipToContentLink = () => {
         el.tabIndex = -1;
         el.focus();
         el.removeAttribute('tabindex');
-
-        setTimeout(() => {
-          window.history.pushState({}, '', '/');
-        }, 0);
       }}
       tabIndex={0}
       className='absolute left-[-9999px] top-5 bg-blue-500 text-white px-2 py-1 focus:left-10'

@@ -3,6 +3,7 @@ import { sendEmail } from '@/actions/sendEmail';
 import { useEffect, useState } from 'react';
 import { useFormState } from 'react-dom';
 import { toast } from 'react-toastify';
+import Impressum from './Impressum';
 import Section from './Section';
 import Input from './contact/Input';
 import SubmitButton from './contact/SubmitButton';
@@ -30,12 +31,7 @@ const Contact = () => {
   }, [sendEmailState]);
 
   return (
-    <Section
-      id='contact'
-      name='Contact Me'
-      className='bg-gray-900 sm:h-[calc(100dvh-86px)]'
-      childWrapperClassName='!block'
-    >
+    <Section id='contact' name='Contact Me' className='bg-gray-900' childWrapperClassName='!block'>
       <form
         id='contact_form'
         action={sendEmailAction}
@@ -79,6 +75,9 @@ const Contact = () => {
         <input type='hidden' id='honeypot' name='honeypot' className='h-0' />
         <SubmitButton />
       </form>
+      <div className='flex flex-row flex-wrap sm:flex-nowrap mx-auto sm:gap-x-10 md:gap-x-16 pt-16 pb-8 px-6 items-start text-base text-left w-fit mt-8 sm:mt-16'>
+        <Impressum />
+      </div>
     </Section>
   );
 };

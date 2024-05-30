@@ -1,9 +1,12 @@
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import PageHead from '@/components/PageHead';
 import Toaster from '@/components/Toaster';
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio | Robin Goudeketting',
@@ -90,10 +93,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <main className='flex min-h-[100dvh] flex-col items-center justify-between relative'>
+      <PageHead />
+      <body className={`${roboto.className} flex h-[100dvh] flex-col`}>
+        <main className='flex flex-col items-center justify-between relative grow shrink-0 basis-0'>
+          <Navbar />
           {children}
         </main>
+        <Footer />
+
         <Toaster />
       </body>
     </html>

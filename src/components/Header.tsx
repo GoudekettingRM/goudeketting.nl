@@ -42,10 +42,6 @@ const Header = () => {
             el.tabIndex = -1;
             el.focus();
             el.removeAttribute('tabindex');
-
-            setTimeout(() => {
-              window.history.pushState({}, '', '/');
-            }, 0);
           }}
         >
           Want to chat?
