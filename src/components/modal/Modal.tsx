@@ -38,19 +38,11 @@ const Modal = ({
   className,
   ...props
 }: TModalProps) => {
+  const closeFn = closeFunction ?? (() => setOpen(false));
+
   return (
     <Transition show={open} className='hidden'>
-      <Dialog
-        open={open}
-        onClose={
-          closeFunction
-            ? closeFunction
-            : () => {
-                setOpen(false);
-              }
-        }
-        className='fixed inset-0 z-50'
-      >
+      <Dialog open={open} onClose={closeFn} className='fixed inset-0 z-50'>
         <div className='min-w-screen sm:flex min-h-screen sm:items-center sm:justify-center'>
           <Transition.Child
             enter='ease-out duration-200'
@@ -94,13 +86,7 @@ const Modal = ({
                       group -mr-2 ml-auto grid h-8 w-8 place-content-center
                       rounded-full transition-colors hover:cursor-pointer hover:bg-gray-100
                     '
-                  onClick={
-                    closeFunction
-                      ? closeFunction
-                      : () => {
-                          setOpen(false);
-                        }
-                  }
+                  onClick={closeFn}
                 >
                   <XIcon className='w-5 h-5' />
                 </button>

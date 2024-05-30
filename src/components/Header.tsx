@@ -1,8 +1,10 @@
 'use client';
-import { motion } from 'framer-motion';
+import { useMotion } from '@/hooks/useMotion';
 import Link from 'next/link';
 
 const Header = () => {
+  const { motion } = useMotion();
+
   return (
     <div
       id='home'

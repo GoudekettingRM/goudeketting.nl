@@ -27,4 +27,39 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
     @apply inline-block w-3 h-3 ml-1 no-underline content-[''] bg-center bg-no-repeat bg-contain;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .animate-fade-in {
+      opacity: 0;
+      scale: 0.8;
+      animation-timeline: view();
+      animation-range: 50px 200px;
+    }
+    .animate-fade-in.from-right {
+      transform-origin: right;
+    }
+    .animate-fade-in.from-left {
+      transform-origin: left;
+    }
+    .animate-fade-in.from-top {
+      transform-origin: top;
+    }
+    .animate-fade-in.from-bottom {
+      transform-origin: bottom;
+    }
+
+    @media screen and (min-width: 640px) {
+      .animate-fade-in {
+        animation-range: 100px 300px;
+      }
+    }
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
 }
