@@ -15,8 +15,8 @@
     ],
     "skills": [
       "Vue3",
-      "Nuxt",
-      "Typescript",
+      "Nuxt3",
+      "TypeScript",
       "Pinia",
       "d3",
       "CSS",
@@ -67,7 +67,7 @@
         "link": "https://finelinesbyhanna.com"
       }
     ],
-    "skills": ["NextJS", "React", "Typescript", "RSpec", "Emotion", "EmailJS", "Vercel"]
+    "skills": ["NextJS", "React", "TypeScript", "Emotion", "EmailJS", "Vercel"]
   },
   {
     "title": "Personal Website",
@@ -86,7 +86,7 @@
     "skills": [
       "NextJS",
       "React",
-      "Typescript",
+      "TypeScript",
       "TailwindCSS",
       "Headless UI",
       "Framer Motion",

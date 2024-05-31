@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo } from 'react';
 import BasecampLogo from '../../public/career-basecamp.svg';
+import allSkills from '../data/skills.json';
 import GenericInfoModal from './modal/GenericInfoModal';
 
 export interface IProject {
@@ -17,6 +18,10 @@ export interface IProject {
 }
 
 export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, title }: IProject) {
+  const skillUrls = useMemo(
+    () => JSON.parse(JSON.stringify(allSkills)) as Record<string, string>,
+    []
+  );
   const { motion, reduced } = useMotion();
   const SVGs = useMemo(
     () => ({
@@ -116,6 +121,20 @@ export function ProjectCard({ links, longDesc, shortDesc, skills, thumbnail, tit
         <p className='flex justify-center items-center text-black'>{longDesc}</p>
         <div className='mt-8 sm:mt-6 flex flex-row flex-wrap gap-2'>
           {skills.map((skill) => {
+            const url = skillUrls[skill];
+            if (url) {
+              return (
+                <Link
+                  href={url}
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  key={skill}
+                  className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 link-external black underline sm:no-underline hover:underline hover:bg-gray-300 hover:shadow-md hover:transition-all hover:ease-in-out hover:duration-200'
+                >
+                  {skill}
+                </Link>
+              );
+            }
             return (
               <span
                 key={skill}

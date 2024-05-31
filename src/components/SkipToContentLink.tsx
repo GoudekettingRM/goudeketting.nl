@@ -18,7 +18,7 @@ const SkipToContentLink = ({ target }: ISkipToContentLinkProps) => {
         el.focus();
         el.removeAttribute('tabindex');
       }}
-      tabIndex={0}
+      tabIndex={1}
       className='absolute left-[-9999px] top-5 bg-blue-500 text-white px-2 py-1 focus:left-10'
     >
       Skip to Main Content
