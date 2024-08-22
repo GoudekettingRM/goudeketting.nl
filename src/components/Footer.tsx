@@ -31,7 +31,7 @@ export default function Footer() {
         </Link>
         <Link
           className='sm:ml-6 underline sm:no-underline hover:underline'
-          href='mailto:robin@goudeketting.nl'
+          href='mailto:r.goudeketting@gmail.com'
         >
           &gt; Email
         </Link>
