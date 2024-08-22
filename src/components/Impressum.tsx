@@ -6,7 +6,11 @@ const Impressum = () => {
       <h2 className='text-2xl font-bold mb-6'>Impressum</h2>
       <div className='max-w-screen-md'>
         <p className='italic text-gray-200 mb-4'>
-          This website is created, owned and operated by <em>Lord Robin M. Goudeketting, MSc</em>.
+          This website is created, owned and operated by{' '}
+          <em>
+            Lord <sup>*</sup> Robin M. Goudeketting, MSc
+          </em>
+          .
         </p>
         <p className='italic text-gray-200 mb-4'>Kleinunternehmer gem. § 6 Abs. 1 Z 27 UstG</p>
         <p className='italic text-gray-200 mb-12'>
@@ -25,13 +29,16 @@ const Impressum = () => {
               Email:{' '}
               <Link
                 className='underline sm:no-underline link-external white'
-                href='mailto:robin@goudeketting.nl'
+                href='mailto:r.goudeketting@gmail.com'
               >
-                robin@goudeketting.nl
+                r.goudeketting@gmail.com
               </Link>
             </p>
           </div>
         </div>
+        <p className='italic text-gray-200 text-sm'>
+          * Yes, some friends actually gave me a Lord title and I use it <s>proudly</s> ironically.
+        </p>
       </div>
     </>
   );
