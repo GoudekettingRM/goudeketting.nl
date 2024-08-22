@@ -16,6 +16,12 @@ export default function About() {
           </p>
           <br />
           <p>
+            In 2021 I moved to Vienna with my partner, where I am currently working remotely as a{' '}
+            <strong>Web Developer</strong>. I am always looking for new opportunities to learn and
+            grow as a developer, as well as to contribute to projects that make a difference.
+          </p>
+          <br />
+          <p>
             My interests and hobbies are plenty, but to name a few; Software Engineering, Ultimate
             Frisbee, Hiking, and Cocktail Making.
           </p>
