@@ -43,5 +43,7 @@
   "I18n": "https://www.i18n.com/",
   "shadcn/ui": "https://ui.shadcn.com/",
   "TransIP": "https://www.transip.eu/",
-  "GoDaddy": "https://www.godaddy.com/"
+  "GoDaddy": "https://www.godaddy.com/",
+  "Plausible": "https://plausible.io/",
+  "Stripe": "https://stripe.com/"
 }
