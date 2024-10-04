@@ -27,7 +27,8 @@
       "Postgres",
       "Responsive Design",
       "SEO",
-      "Heroku"
+      "Heroku",
+      "Stripe"
     ]
   },
   {
@@ -57,7 +58,9 @@
       "SEO",
       "Responsive Design",
       "NPM",
-      "GoDaddy"
+      "GoDaddy",
+      "Plausible",
+      "Stripe"
     ]
   },
   {
