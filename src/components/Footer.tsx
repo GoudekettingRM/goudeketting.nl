@@ -39,12 +39,6 @@ export default function Footer() {
           &gt; impressum
         </Link>
       </div>
-      {/* <Link
-        href='/impressum'
-        className='text-gray-200 underline sm:no-underline hover:underline mt-6 ml-auto text-sm'
-      >
-        impressum
-      </Link> */}
     </footer>
   );
 }

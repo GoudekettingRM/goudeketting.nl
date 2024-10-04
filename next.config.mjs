@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com']
+    remotePatterns: [
+      {
+        hostname: 'res.cloudinary.com'
+      }
+    ]
   },
   webpack: (config) => {
     config.module.rules.push({
