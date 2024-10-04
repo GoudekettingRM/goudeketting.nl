@@ -24,6 +24,7 @@
   "Framer Motion": "https://www.framer.com/motion/",
   "Resend": "https://resend.com/",
   "React Email": "https://react.email/",
+  "React Share": "https://github.com/nygardk/react-share",
   "Ruby": "https://www.ruby-lang.org/en/",
   "RubyGems": "https://rubygems.org/",
   "Rake": "https://ruby.github.io/rake/",
@@ -39,5 +40,8 @@
   "Mocha": "https://mochajs.org/",
   "Chai": "https://www.chaijs.com/",
   "Redux": "https://redux.js.org/",
-  "I18n": "https://www.i18n.com/"
+  "I18n": "https://www.i18n.com/",
+  "shadcn/ui": "https://ui.shadcn.com/",
+  "TransIP": "https://www.transip.eu/",
+  "GoDaddy": "https://www.godaddy.com/"
 }

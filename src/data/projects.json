@@ -31,6 +31,36 @@
     ]
   },
   {
+    "title": "Buy Nothing Today",
+    "shortDesc": "BuyNothing.today is a satirical e-commerce platform where users can purchase different tiers of 'nothing' as a provocative commentary on overconsumption and materialism.",
+    "longDesc": "BuyNothing.today is a thought-provoking web application that masquerades as an e-commerce platform, offering users the unique opportunity to purchase various tiers of 'nothing'. This satirical project serves as a powerful social commentary on the excesses of consumerism, challenging visitors to reflect on their buying habits and the true value of material possessions. By allowing users to spend real money on intangible 'products', the app highlights the often absurd nature of modern consumption patterns and the psychological drivers behind unnecessary purchases. Through its clever marketing, user testimonials, and tiered 'nothing' packages, BuyNothing.today encourages a deeper conversation about minimalism, sustainability, and the pursuit of happiness through non-materialistic means. Ultimately, this innovative app aims to inspire a shift in perspective, prompting users to question the role of consumption in their lives and consider the potential benefits of embracing 'less' in a world that constantly demands 'more'.",
+    "thumbnail": {
+      "src": "/nothing.png",
+      "alt": "Buy Nothing Today Thumbnail"
+    },
+    "links": [
+      {
+        "title": "Have a look",
+        "link": "https://buynothing.today/"
+      }
+    ],
+    "skills": [
+      "NextJS",
+      "React",
+      "shadcn/ui",
+      "TailwindCSS",
+      "React Share",
+      "Vercel",
+      "CSS",
+      "HTML",
+      "TypeScript",
+      "SEO",
+      "Responsive Design",
+      "NPM",
+      "GoDaddy"
+    ]
+  },
+  {
     "title": "Part 4",
     "shortDesc": "A website for Part 4, they offer flame-retardant, biodegradable, and Cradle to Cradle gold® certified curtain fabrics designed for circular use.",
     "longDesc": "Part4 introduces the Zero Waste collection of flame-retardant curtain fabrics that are fully biodegradable and Cradle to Cradle gold® certified, ensuring no microplastics after composting. These fabrics match the durability and properties of 100% polyester and support circular projects in healthcare, hospitality, recreation, and offices. Committed to sustainability, Part4 collaborates with European weavers to minimize ecological impact and contribute to the Netherlands' circular economy goals.",
@@ -92,7 +122,8 @@
       "Framer Motion",
       "Resend",
       "React Email",
-      "Custom Web Hosting"
+      "Custom Web Hosting",
+      "TransIP"
     ]
   },
   {
