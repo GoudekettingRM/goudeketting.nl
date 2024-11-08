@@ -11,11 +11,11 @@ const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Portfolio | Robin Goudeketting',
   description:
-    'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer and the guy who made this website. Check out my work and get in touch!',
+    'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer. Check out my work and get in touch!',
   openGraph: {
     title: 'Portfolio | Robin Goudeketting',
     description:
-      'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer and the guy who made this website. Check out my work and get in touch!',
+      'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer. Check out my work and get in touch!',
     url: 'https://goudeketting.nl',
     type: 'website',
     locale: 'en_US',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     creator: '@RMGoudeketting',
     title: 'Portfolio | Robin Goudeketting',
     description:
-      'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer and the guy who made this website.',
+      'Portfolio of Robin Goudeketting, website wizard, software sorcerer, and digital dabbler, a.k.a. full-stack developer. Check out my work and get in touch!',
     images: [
       {
         url: 'https://www.goudeketting.nl/robin-goudeketting.jpg',
