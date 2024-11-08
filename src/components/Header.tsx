@@ -10,13 +10,13 @@ const Header = () => {
       id='home'
       className='h-[100dvh] w-full items-center border-b-2 flex flex-col justify-center'
     >
-      <motion.h2
+      <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         className='text-center text-7xl font-bold italic text-green-300'
       >
         Hey! I&apos;m
-      </motion.h2>
+      </motion.div>
       <h1 className='text-center text-8xl font-bold text-white mt-4'>
         <motion.div initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }}>
           Robin
@@ -25,7 +25,7 @@ const Header = () => {
           <span className='hidden sm:block mt-1'>Goudeketting</span>
         </motion.div>
       </h1>
-      <motion.h3
+      <motion.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 2, 1], scale: [1, 1.05, 1] }}
         transition={{ duration: 1, times: [0.3, 0.4, 1.0] }}
@@ -58,7 +58,7 @@ const Header = () => {
             />
           </svg>
         </Link>
-      </motion.h3>
+      </motion.h2>
     </div>
   );
 };
